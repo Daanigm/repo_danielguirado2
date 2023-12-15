@@ -1,4 +1,10 @@
 describe('crear tareas y clickar en ellas', () => {
+beforeEach(() => {
+  cy.visit('https://todomvc.com/examples/react/#/') 
+
+
+});
+
 
 
     it('crear tarea 1', () => {
@@ -8,7 +14,7 @@ describe('crear tareas y clickar en ellas', () => {
       
           
  
-    })
+    });
 
     it('crear tarea 2 y verificar como completada', () => {
       cy.visit('https://todomvc.com/examples/react/#/')
@@ -19,7 +25,7 @@ describe('crear tareas y clickar en ellas', () => {
       
            
        
-   })    
+   })  ;  
 
    it('crear tarea 3 y verificar no como completada', () => {
       cy.visit('https://todomvc.com/examples/react/#/')
@@ -27,7 +33,7 @@ describe('crear tareas y clickar en ellas', () => {
       cy.get('.toggle').click()
       cy.get('.toggle').click()
       
-  })  
+  }) ; 
 
 
   it('crear tarea 4 y editar nombre', () => {
@@ -39,7 +45,7 @@ describe('crear tareas y clickar en ellas', () => {
 
          
   
- })
+ });
    
  it("crear tarea 5 y eliminarla  ", () => {
     
@@ -77,4 +83,4 @@ describe('crear tareas y clickar en ellas', () => {
 
 
 
-})
+});
